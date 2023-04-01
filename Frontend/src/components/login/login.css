@@ -23,9 +23,9 @@ body {
 .Rectangle1 {
     position: absolute;
     background: rgba(206, 243, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(3.5px);
-    -webkit-backdrop-filter: blur(3.5px);
+    box-shadow: 0px 4px 22px #B2DFFF;
+    backdrop-filter: blur(0.26px);
+    -webkit-backdrop-filter: blur(0.26px);
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     left: 10px;
