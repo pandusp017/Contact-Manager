@@ -5,6 +5,7 @@ const dbconnect=require('./connections/conn');
 const bodyParser=require('body-parser');
 const checkToken = require('./helper/verifytoken');
 
+const PORT=process.env.BASE_URL || 5000
 dbconnect();
 
 const app = express();
@@ -25,6 +26,6 @@ app.use('/contacts',checkToken,contactRoute);
 
 app.use('/contacts',checkToken,contactDetails);
 
-app.listen(5000, () => {
-  console.log("Server started on http://localhost:5000");
+app.listen(PORT, () => {
+  console.log(`Server started on http://localhost:${PORT}`);
 });
