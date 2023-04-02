@@ -36,7 +36,7 @@ function ContactPage() {
 
   const token = isAuthenticated();
   if(!token){
-    <div>Not An Authenticated user</div>
+    return <div>Not An Authenticated user</div>
   }
   useEffect(() => {
     setLoading(true);
